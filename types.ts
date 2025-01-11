@@ -6,3 +6,5 @@ interface CandleData {
 }
 
 type Direction = 'bearish' | 'bullish'
+
+interface TradingSetup
