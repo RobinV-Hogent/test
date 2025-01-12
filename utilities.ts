@@ -53,13 +53,13 @@ const mergeCandleData = (data: CandleData[]): CandleData => {
     } as CandleData
 }
 
-export const validatePreviousCandle = (candleId, data, haDirection: Direction | undefined) => {
+export const validatePreviousCandle = (candleId, data, haDirection: Direction | undefined): boolean => {
     // check for hammer like candle
     const candleData = data[candleId];
 
     if (!candleData) {
         console.log('no candle data found for id: ' + candleId)
-        return;
+        return false;
     }
     console.log(candleData)
     const direction = candleData.open - candleData.close;
@@ -87,7 +87,6 @@ export const validatePreviousCandle = (candleId, data, haDirection: Direction | 
 
 
     const ratios = [wickSize1 / bodySize, wickSize2 / bodySize]
-    console.log(ratios)
     const containsSmallerThan75: number | undefined = ratios.find(e => e <= 0.75)
     const containsBiggerThan1: number | undefined = ratios.find(e => e > 1)
 
@@ -95,6 +94,7 @@ export const validatePreviousCandle = (candleId, data, haDirection: Direction | 
         if (containsSmallerThan75 >= 0 && containsBiggerThan1 >= 0 && validClosePosition) {
             console.log('🟢 found hammer like candle id: ' + candleId)
             printHammerCandle(candleId, (!(direction <= 0)) ? "DOWN" : "UP")
+            return true;
         }
     }
 }

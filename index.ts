@@ -37,14 +37,16 @@ const messageReceived = (event) => {
     checkHammerLikeCandle(id);
 }
 
-const checkHammerLikeCandle = (id: string) => {
+const checkHammerLikeCandle = (id: string): boolean => {
+    let valid = false;
     if (first) {
         first = false
     }
     if (lastId !== id && !first && isValidHeikinAshiCandle) {
-        validatePreviousCandle(lastId, data, haDirection)
+        valid = validatePreviousCandle(lastId, data, haDirection)
         lastId = id
     }
+    return valid;
 }
 
 const checkHA = (time: Date, checkEveryXminutes: number) => {
