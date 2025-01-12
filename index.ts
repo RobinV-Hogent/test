@@ -1,3 +1,4 @@
+import { checkTrades, performTrades } from './trading.ts';
 import { generateId, isValidHeikinAshi, validatePreviousCandle } from './utilities.ts';
 
 
@@ -35,6 +36,7 @@ const messageReceived = (event) => {
 
     data[`${id}`] = currently;
     checkHammerLikeCandle(id);
+    checkTrades(currently);
 }
 
 const checkHammerLikeCandle = (id: string): boolean => {

@@ -1,4 +1,5 @@
 import { printHammerCandle, printValidHeikinAshiCandle } from "./logger.ts";
+import { performTrades } from "./trading.ts";
 
 export const generateId = (t: Date, withMinutes: boolean = true) => {
     let id = t.getFullYear().toString() + t.getMonth().toString() + t.getDate().toString() + t.getHours().toString() + (withMinutes ? t.getMinutes().toString() : "")
@@ -94,7 +95,9 @@ export const validatePreviousCandle = (candleId, data, haDirection: Direction | 
         if (containsSmallerThan75 >= 0 && containsBiggerThan1 >= 0 && validClosePosition) {
             console.log('🟢 found hammer like candle id: ' + candleId)
             printHammerCandle(candleId, (!(direction <= 0)) ? "DOWN" : "UP")
-            return true;
+            performTrades(candleData, haDirection)
         }
     }
+
+    return false;
 }
