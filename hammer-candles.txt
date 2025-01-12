@@ -12,3 +12,38 @@
 202501223 - DOWN
 ---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
 2025012242 - DOWN
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+20250121437 - UP
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+20250121448 - DOWN
+20250121457 - UP
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+20250121519 - DOWN
+test_id - UP
+test_id - UP
+test_id - UP
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+20250121533 - DOWN
+test_id - UP
+20250121535 - UP
+20250121541 - UP
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+test_id - UP
+test_id - UP
+test_id - UP
+20250121546 - DOWN
+test_id - UP
+20250121548 - UP
+test_id - UP
+test_id - UP
+test_id - UP
+test_id - UP
+test_id - UP
+test_id - UP
+test_id - UP
+test_id - UP
+test_id - UP
+test_id - UP
+test_id - UP
+test_id - UP

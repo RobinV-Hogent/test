@@ -63,9 +63,15 @@ export const validatePreviousCandle = (candleId, data, haDirection: Direction | 
         return false;
     }
     console.log(candleData)
+
+
+    return validateHammer(candleData, haDirection, candleId);
+}
+
+
+export const validateHammer = (candleData: CandleData, haDirection: Direction, candleId: string) => {
+
     const direction = candleData.open - candleData.close;
-
-
     let wickSize1, wickSize2, bodySize
     // bodysize negative = price went down
     if (!(direction <= 0)) {
@@ -86,7 +92,6 @@ export const validatePreviousCandle = (candleId, data, haDirection: Direction | 
         validClosePosition = candleData.close > averagePrice;
     }
 
-
     const ratios = [wickSize1 / bodySize, wickSize2 / bodySize]
     const containsSmallerThan75: number | undefined = ratios.find(e => e <= 0.75)
     const containsBiggerThan1: number | undefined = ratios.find(e => e > 1)
@@ -96,6 +101,7 @@ export const validatePreviousCandle = (candleId, data, haDirection: Direction | 
             console.log('🟢 found hammer like candle id: ' + candleId)
             printHammerCandle(candleId, (!(direction <= 0)) ? "DOWN" : "UP")
             performTrades(candleData, haDirection)
+            return true;
         }
     }
 

@@ -1,22 +1,31 @@
-import { checkTrades, performTrades } from './trading.ts';
+import { checkTrades, createTradingAccounts, performTrades } from './trading.ts';
 import { generateId, isValidHeikinAshi, validatePreviousCandle } from './utilities.ts';
 
-
-// const fs = require('fs');
 
 const ws = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@kline_1m");
 
 const data = {}
 let quarterData: CandleData[] = [];
-let isValidHeikinAshiCandle: boolean = true; // initialize with right bool (def: false)
-let previousHaCandle: undefined | CandleData = undefined;
-let haDirection: Direction = 'bearish'; // initialize with right num (def: undefined)
+let isValidHeikinAshiCandle: boolean = false; // initialize with right bool (def: false)
+
+// previousHaCandle = Default = undefined
+let previousHaCandle: CandleData | undefined = undefined;
+// let previousHaCandle: undefined | CandleData = {
+//     open: 94179.5,
+//     high: 94316.7,
+//     low: 94179.5,
+//     close: 94263.9
+// };
+
+
+let haDirection: Direction | undefined = undefined; // initialize with right num (def: undefined)
 
 let first = true;
 let heikinFirst = true;
 const t = new Date();
 let lastId = generateId(t);
 
+createTradingAccounts();
 
 const messageReceived = (event) => {
     const message = JSON.parse(event.data);

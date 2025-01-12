@@ -22,3 +22,13 @@ export const printValidHeikinAshiCandle = async (direction: Direction) => {
         }
     });
 }
+
+export const printTradeExecutions = async (text: string, account: TradingAccount) => {
+    const filePath = `./accounts/trading-account-${account.id}-trades.txt`;
+
+    fs.appendFile(filePath, `${text}` + "\n", (err) => {
+        if (err) {
+            console.error('Error appending to file:', err);
+        }
+    });
+}
