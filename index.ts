@@ -8,9 +8,9 @@ const ws = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@kline_1m");
 
 const data = {}
 let quarterData: CandleData[] = [];
-let isValidHeikinAshiCandle: boolean = false;
+let isValidHeikinAshiCandle: boolean = true; // initialize with right bool (def: false)
 let previousHaCandle: undefined | CandleData = undefined;
-let haDirection: Direction;
+let haDirection: Direction = 'bearish'; // initialize with right num (def: undefined)
 
 let first = true;
 let heikinFirst = true;

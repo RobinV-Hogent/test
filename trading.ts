@@ -1,4 +1,4 @@
-import { setup1, setup2, setup3, setup4, setup5, setup6, setup7 } from "./trading-setup";
+import { setup1, setup2, setup3, setup4, setup5, setup6, setup7 } from "./trading-setup.ts";
 
 const baseAccount: TradingAccount = {
     balance: 50000,
@@ -24,7 +24,7 @@ export const performTrades = (data: CandleData, direction: Direction) => {
     for (let i = 0; i < accounts.length; i++) {
         let account = accounts[i];
 
-        if (account.isTrading) continue;
+        if (!account.isTrading) continue;
         if (!account.tradingSetup) continue;
 
         const sl = account.tradingSetup.stoploss;
@@ -57,21 +57,26 @@ export const checkTrades = (data: CandleData) => {
         if(trade.type == 'bullish') {
             if(data.high >= trade.takeprofit) {
                 account.balance += trade.risk * account.tradingSetup?.risk
-                account.isTrading = false
+                endTrade(account)
             }
             if(data.low <= trade.stoploss) {
                 account.balance -= trade.risk
-                account.isTrading = false
+                endTrade(account)
             }
         } else {
             if(data.high >= trade.stoploss) {
                 account.balance -= trade.risk
-                account.isTrading = false
+                endTrade(account)
             }
             if(data.low <= trade.takeprofit) {
                 account.balance += trade.risk * account.tradingSetup?.risk
-                account.isTrading = false
+                endTrade(account)
             }
         }
     }
+}
+
+const endTrade = (account: TradingAccount) => {
+    account.isTrading = false;
+    console.log(`🟠 A Trade on account ${account.id} has ended`)
 }
