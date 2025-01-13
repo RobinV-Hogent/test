@@ -1,5 +1,5 @@
 import { checkTrades, createTradingAccounts, performTrades } from './trading.ts';
-import { generateId, isValidHeikinAshi, validatePreviousCandle } from './utilities.ts';
+import { checkHAValidity, generateId, isValidHeikinAshi, validatePreviousCandle } from './utilities.ts';
 
 
 const ws = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@kline_1m");
@@ -27,11 +27,60 @@ let lastId = generateId(t);
 
 createTradingAccounts();
 
-const messageReceived = (event) => {
+const initializeHeikinAshi = async () => {
+    // get heikinashi candles
+    const data = await fetch("https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=15m&limit=10").then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+
+    // -1 cuz last item is current candle
+    for (let i = 0; i < data.length - 1; i++) {
+
+        const [_, c_open, c_high, c_low, c_close] = data[i]
+
+        const minute15candle = {
+            open: parseFloat(c_open),
+            close: parseFloat(c_close),
+            high: parseFloat(c_high),
+            low: parseFloat(c_low)
+        }
+
+        const res = checkHAValidity(minute15candle, previousHaCandle)
+
+        isValidHeikinAshiCandle = res.valid;
+        previousHaCandle = res.prev;
+        haDirection = res.direction;
+        // console.log(previousHaCandle)
+        // console.log(minute15candle)
+    }
+
+    const [__, n_open, n_high, n_low, n_close] = data[data.length - 1]
+
+    quarterData = [{
+        open: parseFloat(n_open),
+        high: parseFloat(n_high),
+        low: parseFloat(n_low),
+        close: parseFloat(n_close)
+    }]
+}
+
+
+const messageReceived = async (event) => {
+
+
+
+
     const message = JSON.parse(event.data);
     const kline = message.k;
     const time = new Date(kline.t);
     const id = generateId(time);
+
 
 
     const currently: CandleData = {
@@ -40,6 +89,7 @@ const messageReceived = (event) => {
         low: parseFloat(kline.l),
         close: parseFloat(kline.c)
     }
+
     quarterData.push(currently);
     checkHA(time, 15);
 
@@ -54,6 +104,7 @@ const checkHammerLikeCandle = (id: string): boolean => {
         first = false
     }
     if (lastId !== id && !first && isValidHeikinAshiCandle) {
+        console.log("check")
         valid = validatePreviousCandle(lastId, data, haDirection)
         lastId = id
     }
@@ -66,6 +117,7 @@ const checkHA = (time: Date, checkEveryXminutes: number) => {
         const res = isValidHeikinAshi(quarterData, previousHaCandle);
         isValidHeikinAshiCandle = res.valid;
         previousHaCandle = res.prev;
+        haDirection = res.direction;
         quarterData = [];
         heikinFirst = false;
     }
@@ -75,11 +127,11 @@ const checkHA = (time: Date, checkEveryXminutes: number) => {
     }
 }
 
+initializeHeikinAshi();
 
 
 // Listen for WebSocket messages
 ws.onmessage = (event) => messageReceived(event)
-
 
 
 // Handle WebSocket errors

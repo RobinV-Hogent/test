@@ -2,7 +2,7 @@ import fs from 'fs'
 import { generateId } from './utilities.ts';
 
 
-export const printHammerCandle = async (time, direction) => {
+export const printHammerCandle = async (time, direction = "") => {
     const filePath = `./hammer-candles.txt`;
 
     fs.appendFile(filePath, time + " - " + direction + "\n", (err) => {

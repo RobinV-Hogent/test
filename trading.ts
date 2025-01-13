@@ -58,6 +58,7 @@ export const performSingleTrade = (account: TradingAccount, direction: Direction
 
     console.log(msg)
     printTradeExecutions(`${msg}: \n${account.balance}`, account)
+    account.isTrading = true;
     return true;
 }
 
@@ -119,7 +120,7 @@ const checkOutOfTrade = (data: CandleData, trade: Trade, account: TradingAccount
 }
 
 
-const endTrade = (account: TradingAccount, reason: 'TP' | 'SL') => {
+export const endTrade = (account: TradingAccount, reason: 'TP' | 'SL') => {
     account.isTrading = false;
 
     const msg = `🟠 A Trade on account ${account.id} has ended`;

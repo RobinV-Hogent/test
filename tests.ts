@@ -1,4 +1,4 @@
-import { checkTrades, performSingleTrade, performTrades } from "./trading.ts";
+import { checkTrades, endTrade, performSingleTrade, performTrades } from "./trading.ts";
 import { setup1 } from "./trading-setup.ts";
 import { validateHammer, validatePreviousCandle } from "./utilities.ts";
 
@@ -19,7 +19,7 @@ const hammerCandleTestCases: {direction: Direction, data: CandleData, result: bo
 
 for(const {direction, data, result} of hammerCandleTestCases) {
     test('is valid hammer candle', async (t) => {
-        const account = { id: 1, ...baseAccount, tradingSetup: setup1 }
+        const account = { id: 999, ...baseAccount, tradingSetup: setup1 }
 
         const res: boolean = validateHammer(data, direction, 'test_id')
 
@@ -35,23 +35,30 @@ for(const {direction, data, result} of hammerCandleTestCases) {
             assert.ok(entered);
         })
 
+        await t.test('enter another trade?', () => {
+            if(!res) {
+                assert.ok(res == false)
+                return;
+            };
+
+            const entered = performSingleTrade(account, direction, data)
+            // not entered because already in trade
+            assert.ok(!entered);
+        })
+
+        await t.test('end trade', () => {
+            const wasEnded = endTrade(account, 'TP')
+            assert.ok(!account.isTrading);
+        })
+
+        await t.test('can trade again?', () => {
+            if(!res) {
+                assert.ok(res == false)
+                return;
+            };
+
+            const entered = performSingleTrade(account, direction, data)
+            assert.ok(entered);
+        })
     });
 }
-
-
-// test('enter trades when hammerlike candle prints', () => {
-
-//     const baseAccount: TradingAccount = {
-//         balance: 50000,
-//         trades: [],
-//         isTrading: false,
-//     }
-
-//     const accounts = [{ id: 1, ...baseAccount, tradingSetup: setup1 }]
-
-//     console.log(accounts[0].isTrading)
-
-//     performTrades({open: 94582.4, high: 94587.3, low: 94536.3, close: 94587.3}, 'bullish', accounts);
-
-//     expect(accounts[0].isTrading).toBe(true)
-// });
