@@ -31,7 +31,9 @@ export const checkHAValidity = (candle: CandleData, prev: CandleData | undefined
         printValidHeikinAshiCandle(direction)
     }
 
-    console.log(`New Heikin Ashi Candle Data (${new Date().toUTCString()}):`, { direction, valid, prevHa: prev, min15: candle, newHa: haCandle })
+    // console.log(`New Heikin Ashi Candle Data (${new Date().toUTCString()}):`, { direction, valid, prevHa: prev, min15: candle, newHa: haCandle })
+
+    console.log(`${direction}: ${valid}`)
     return { valid, prev: haCandle, direction }
 }
 
@@ -55,15 +57,15 @@ const composeHACandle = ({ open, high, low, close }: CandleData, prevHa: CandleD
     };
 };
 
-const mergeCandleData = (data: CandleData[]): CandleData => {
-    const direction = decideDirection(data[0].open, data[data.length - 1].close)
-
-    return {
+export const mergeCandleData = (data: CandleData[]): CandleData => {
+    const merged = {
         open: data[0].open,
         high: data.reduce((prev, curr) => { return curr.high > prev ? curr.high : prev }, 0),
         low: data.reduce((prev, curr) => { return curr.low < prev ? curr.low : prev }, Number.MAX_VALUE),
         close: data[data.length - 1].close
     } as CandleData
+
+    return merged;
 }
 
 export const validatePreviousCandle = (candleId, data, haDirection: Direction | undefined): boolean => {
@@ -74,7 +76,7 @@ export const validatePreviousCandle = (candleId, data, haDirection: Direction | 
         console.log('no candle data found for id: ' + candleId)
         return false;
     }
-    console.log(candleData)
+
 
     if (!haDirection) return false;
 
@@ -83,42 +85,6 @@ export const validatePreviousCandle = (candleId, data, haDirection: Direction | 
 
 
 export const validateHammer = (candleData: CandleData, haDirection: Direction, candleId: string): boolean => {
-
-    // const direction = candleData.open - candleData.close;
-    // let wickSize1, wickSize2, bodySize
-    // // bodysize negative = price went down
-    // if (!(direction <= 0)) {
-    //     wickSize1 = candleData.high - candleData.open
-    //     wickSize2 = candleData.close - candleData.low
-    //     bodySize = Math.abs(candleData.open - candleData.close)
-    // } else {
-    //     wickSize1 = candleData.high - candleData.close
-    //     wickSize2 = candleData.open - candleData.low
-    //     bodySize = Math.abs(candleData.open - candleData.close)
-    // }
-
-    // const averagePrice = (candleData.high + candleData.low) / 2;
-    // let validClosePosition = false;
-    // if(haDirection == 'bearish') {
-    //     validClosePosition = candleData.close < averagePrice;
-    // } else {
-    //     validClosePosition = candleData.close > averagePrice;
-    // }
-
-    // const ratios = [wickSize1 / bodySize, wickSize2 / bodySize]
-    // const containsSmallerThan75: number | undefined = ratios.find(e => e <= 0.75)
-    // const containsBiggerThan1: number | undefined = ratios.find(e => e > 1)
-
-    // if (typeof containsBiggerThan1 == "number" && typeof containsSmallerThan75 == "number") {
-    //     if (containsSmallerThan75 >= 0 && containsBiggerThan1 >= 0 && validClosePosition) {
-    //         console.log('🟢 found hammer like candle id: ' + candleId)
-    //         printHammerCandle(candleId, (!(direction <= 0)) ? "DOWN" : "UP")
-    //         performTrades(candleData, haDirection)
-    //         return true;
-    //     }
-    // }
-
-    // return false;
 
     const bodyRange = Math.abs(candleData.close - candleData.open);
     const thirdRangeValue = (candleData.high - candleData.low) / 3
@@ -147,21 +113,28 @@ export const validateHammer = (candleData: CandleData, haDirection: Direction, c
 }
 
 const checkValidBearish = (candle: CandleData, midPrice: number, bound: number) => {
-
     if (!(candle.open < midPrice && candle.close < midPrice)) {
         return false;
     }
 
     const avgBody = Math.abs(candle.open - candle.close) / 2;
-    return avgBody < bound ? true : false;
+    const res = avgBody < bound ? true : false;
+
+    if(res) console.log(`hammer like candle found`)
+
+    return res;
 }
 
 const checkValidBullish = (candle: CandleData, midPrice: number, bound: number) => {
-
     if (!(candle.open > midPrice && candle.close > midPrice)) {
         return false;
     }
 
-    const avgBody = Math.abs(candle.open - candle.close) / 2;
-    return avgBody > bound ? true : false;
+    const avgBody = Math.abs(candle.open + candle.close) / 2;
+    console.log(avgBody, bound, avgBody > bound)
+    const res = avgBody > bound ? true : false;
+
+    if(res) console.log(`hammer like candle found`)
+
+    return res;
 }

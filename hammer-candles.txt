@@ -177,3 +177,446 @@ test_id - UP
 ---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
 ---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
 ---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+2025013153 - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+202501321 - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+202501327 - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+20250131223 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+20250131245 - 
+20250131250 - 
+20250131251 - 
+20250131255 - 
+20250131257 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+2025013138 - 
+20250131311 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+20250131334 - 
+20250131335 - 
+20250131341 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+20250131349 - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+20250131433 - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+20250131445 - 
+20250131454 - 
+20250131455 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+20250141443 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+20250141547 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+20250141717 - 
+20250141721 - 
+20250141726 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+20250141745 - 
+20250141748 - 
+20250141749 - 
+20250141750 - 
+20250141751 - 
+20250141756 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+2025014182 - 
+2025014185 - 
+20250141810 - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+test_id - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+20250142120 - 
+20250142128 - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+20250142246 - 
+20250142254 - 
+20250142255 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+2025014237 - 
+20250142311 - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+2025015130 - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+2025015144 - 
+2025015153 - 
+test_id - 
+test_id - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+---------- VALID BULLISH HEIKIN ASHI CANDLE ----------
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+---------- VALID BEARISH HEIKIN ASHI CANDLE ----------
+test_id - 
+test_id - 
+test_id - 
+2025015333 - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+2025015335 - 
+test_id - 
+2025015336 - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 
+test_id - 

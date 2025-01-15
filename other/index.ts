@@ -1,32 +1,33 @@
-// Create a new WebSocket connection to the Binance stream
-const socket = new WebSocket('wss://stream.binance.com:9443/stream?streams=btcusdt@trade');
+interface Base {
+    collection: string[]
+}
 
-// Event listener for when the connection is established
-socket.addEventListener('open', () => {
-  console.log('Connected to Binance WebSocket stream');
-});
+const base: Base = {
+    collection: []
+}
 
-// Event listener for receiving messages from the WebSocket
-socket.addEventListener('message', (event) => {
-  // Parse the incoming JSON data
-  const data = JSON.parse(event.data);
+const item1 = {
+    id: 1,
+    ...base,
+}
 
-  // Extract the trade data
-  const tradeData = data.data;
-  const price = tradeData.p; // Trade price
-  const quantity = tradeData.q; // Trade quantity
-  const timestamp = tradeData.T; // Trade timestamp
+const item2 = {
+    id: 2,
+    ...base,
+}
 
-  // Log the trade details
-  console.log(`Trade occurred at price: ${price}, quantity: ${quantity}, time: ${new Date(timestamp)}`);
-});
+item1.collection.push('test')
 
-// Event listener for errors
-socket.addEventListener('error', (error) => {
-  console.error('WebSocket Error:', error);
-});
+console.log(item1)
+console.log(item2)
 
-// Event listener for when the connection is closed
-socket.addEventListener('close', () => {
-  console.log('WebSocket connection closed');
-});
+const item3 = {
+    id: 3,
+    ...JSON.parse(JSON.stringify(base)),
+}
+
+item3.collection.push('test123')
+
+console.log(item1)
+console.log(item2)
+console.log(item3)

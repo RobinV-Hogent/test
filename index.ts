@@ -56,8 +56,6 @@ const initializeHeikinAshi = async () => {
         isValidHeikinAshiCandle = res.valid;
         previousHaCandle = res.prev;
         haDirection = res.direction;
-        // console.log(previousHaCandle)
-        // console.log(minute15candle)
     }
 
     const [__, n_open, n_high, n_low, n_close] = data[data.length - 1]
@@ -68,13 +66,12 @@ const initializeHeikinAshi = async () => {
         low: parseFloat(n_low),
         close: parseFloat(n_close)
     }]
+
+    console.log(quarterData)
 }
 
 
 const messageReceived = async (event) => {
-
-
-
 
     const message = JSON.parse(event.data);
     const kline = message.k;
@@ -104,7 +101,6 @@ const checkHammerLikeCandle = (id: string): boolean => {
         first = false
     }
     if (lastId !== id && !first && isValidHeikinAshiCandle) {
-        console.log("check")
         valid = validatePreviousCandle(lastId, data, haDirection)
         lastId = id
     }
