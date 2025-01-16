@@ -17,6 +17,7 @@ let previousHaCandle: CandleData | undefined = undefined;
 //     close: 94263.9
 // };
 
+const CHECK_EVERY_X_MIN = 5;
 
 let haDirection: Direction | undefined = undefined; // initialize with right num (def: undefined)
 
@@ -29,7 +30,7 @@ createTradingAccounts();
 
 const initializeHeikinAshi = async () => {
     // get heikinashi candles
-    const data = await fetch("https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=15m&limit=10").then(response => {
+    const data = await fetch(`https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=${CHECK_EVERY_X_MIN}m&limit=10`).then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -40,7 +41,7 @@ const initializeHeikinAshi = async () => {
         });
 
     // -1 cuz last item is current candle
-    for (let i = 0; i < data.length - 1; i++) {
+    for (let i = 0; i < data.length - 2; i++) {
 
         const [_, c_open, c_high, c_low, c_close] = data[i]
 
@@ -59,15 +60,6 @@ const initializeHeikinAshi = async () => {
     }
 
     const [__, n_open, n_high, n_low, n_close] = data[data.length - 1]
-
-    quarterData = [{
-        open: parseFloat(n_open),
-        high: parseFloat(n_high),
-        low: parseFloat(n_low),
-        close: parseFloat(n_close)
-    }]
-
-    console.log(quarterData)
 }
 
 
@@ -87,10 +79,10 @@ const messageReceived = async (event) => {
         close: parseFloat(kline.c)
     }
 
-    quarterData.push(currently);
-    checkHA(time, 15);
-
     data[`${id}`] = currently;
+
+    checkHA(time, CHECK_EVERY_X_MIN);
+
     checkHammerLikeCandle(id);
     checkTrades(currently);
 }
@@ -107,15 +99,36 @@ const checkHammerLikeCandle = (id: string): boolean => {
     return valid;
 }
 
-const checkHA = (time: Date, checkEveryXminutes: number) => {
+const checkHA = async (time: Date, checkEveryXminutes: number) => {
     if (time.getMinutes() % checkEveryXminutes == 0 && heikinFirst) {
         console.log('New Heikin Ashi Candle')
-        const res = isValidHeikinAshi(quarterData, previousHaCandle);
-        isValidHeikinAshiCandle = res.valid;
-        previousHaCandle = res.prev;
-        haDirection = res.direction;
-        quarterData = [];
-        heikinFirst = false;
+
+        await fetch(`https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=${checkEveryXminutes}m&limit=2`).then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        }).then(resp => {
+            const [__, n_open, n_high, n_low, n_close] = resp[0];
+
+            const candle: CandleData = {
+                open: parseFloat(n_open),
+                close: parseFloat(n_close),
+                high: parseFloat(n_high),
+                low: parseFloat(n_low)
+            }
+
+
+            const res = checkHAValidity(candle, previousHaCandle);
+            isValidHeikinAshiCandle = res.valid;
+            previousHaCandle = res.prev;
+            haDirection = res.direction;
+            heikinFirst = false;
+        }
+        )
+            .catch(error => {
+                console.error('Error:', error);
+            });
     }
 
     if (!(time.getMinutes() % checkEveryXminutes == 0)) {

@@ -97,8 +97,6 @@ export const checkTrades = (data: CandleData) => {
         if (!account.isTrading) continue;
         if (!account.tradingSetup) continue;
 
-        console.log({ account: JSON.stringify(account), setup: JSON.stringify(account.tradingSetup), trade: trade})
-
         checkBreakEven(data, trade, account)
         checkOutOfTrade(data, trade, account);
     }
@@ -141,13 +139,13 @@ export const checkOutOfTrade = (data: CandleData, trade: Trade, account: Trading
             outOfTrade = true;
         }
         if (data.low <= trade.stoploss) {
-            account.balance -= trade.risk
+            account.balance -= Math.abs(trade.stoploss - trade.entry)
             endTrade(account, 'SL')
             outOfTrade = true;
         }
     } else {
         if (data.high >= trade.stoploss) {
-            account.balance -= trade.risk
+            account.balance -= Math.abs(trade.stoploss - trade.entry)
             endTrade(account, 'SL')
             outOfTrade = true;
         }
