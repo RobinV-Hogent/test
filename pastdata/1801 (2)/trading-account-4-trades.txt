@@ -1,0 +1,40 @@
+🟢: Account ID-4 - Entered BULLISH - Current Balance: 50000: 
+50000
+🟠 A Trade on account 4 has ended - SL HIT: 
+ BALANCE: 48500
+🟢: Account ID-4 - Entered BULLISH - Current Balance: 48500: 
+48500
+🟠 A Trade on account 4 has ended - SL HIT: 
+ BALANCE: 47045
+🔴: Account ID-4 - Entered BEARISH - Current Balance: 47045: 
+47045
+🟠 A Trade on account 4 has ended - SL HIT: 
+ BALANCE: 45633.65
+🔴: Account ID-4 - Entered BEARISH - Current Balance: 45633.65: 
+45633.65
+🟠 A Trade on account 4 has ended - TP HIT: 
+ BALANCE: 48371.669
+🟢: Account ID-4 - Entered BULLISH - Current Balance: 48371.669: 
+48371.669
+🟠 A Trade on account 4 has ended - TP HIT: 
+ BALANCE: 51273.96914
+🟢: Account ID-4 - Entered BULLISH - Current Balance: 51273.96914: 
+51273.96914
+🟠 A Trade on account 4 has ended - TP HIT: 
+ BALANCE: 54350.4072884
+🟢: Account ID-4 - Entered BULLISH - Current Balance: 54350.4072884: 
+54350.4072884
+🟠 A Trade on account 4 has ended - TP HIT: 
+ BALANCE: 57611.431725703995
+🟢: Account ID-4 - Entered BULLISH - Current Balance: 57611.431725703995: 
+57611.431725703995
+🟠 A Trade on account 4 has ended - SL HIT: 
+ BALANCE: 55883.088773932875
+🟢: Account ID-4 - Entered BULLISH - Current Balance: 55883.088773932875: 
+55883.088773932875
+🟠 A Trade on account 4 has ended - SL HIT: 
+ BALANCE: 54206.59611071489
+🟢: Account ID-4 - Entered BULLISH - Current Balance: 54206.59611071489: 
+54206.59611071489
+🟠 A Trade on account 4 has ended - SL HIT: 
+ BALANCE: 52580.398227393445

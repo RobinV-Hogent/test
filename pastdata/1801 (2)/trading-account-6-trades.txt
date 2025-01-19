@@ -1,0 +1,24 @@
+🟢: Account ID-6 - Entered BULLISH - Current Balance: 50000: 
+50000
+🟠 A Trade on account 6 has ended - SL HIT: 
+ BALANCE: 48500
+🟢: Account ID-6 - Entered BULLISH - Current Balance: 48500: 
+48500
+🟠 A Trade on account 6 has ended - SL HIT: 
+ BALANCE: 47045
+🔴: Account ID-6 - Entered BEARISH - Current Balance: 47045: 
+47045
+🟠 A Trade on account 6 has ended - SL HIT: 
+ BALANCE: 45633.65
+🔴: Account ID-6 - Entered BEARISH - Current Balance: 45633.65: 
+45633.65
+🟠 A Trade on account 6 has ended - SL HIT: 
+ BALANCE: 44264.6405
+🟢: Account ID-6 - Entered BULLISH - Current Balance: 44264.6405: 
+44264.6405
+🟠 A Trade on account 6 has ended - SL HIT: 
+ BALANCE: 42936.701285
+🟢: Account ID-6 - Entered BULLISH - Current Balance: 42936.701285: 
+42936.701285
+🟠 A Trade on account 6 has ended - SL HIT: 
+ BALANCE: 41648.600246450005

@@ -15,11 +15,12 @@ export const isValidHeikinAshi = (data, prevHa: CandleData | undefined = undefin
 }
 
 export const checkHAValidity = (candle: CandleData, prev: CandleData | undefined = undefined): { valid: boolean, prev: CandleData, direction: Direction } => {
-
     const haCandle: CandleData = composeHACandle(candle, prev);
+    return isOneSidedHA(haCandle);
+}
 
+export const isOneSidedHA = (haCandle: CandleData): { valid: boolean, prev: CandleData, direction: Direction } => {
     let valid = false;
-
     const direction: Direction = decideDirection(haCandle.open, haCandle.close);
     if (direction == 'bullish') {
         valid = Math.min(haCandle.open, haCandle.close, haCandle.low, haCandle.high) == haCandle.open;
@@ -31,10 +32,9 @@ export const checkHAValidity = (candle: CandleData, prev: CandleData | undefined
         printValidHeikinAshiCandle(direction)
     }
 
-    // console.log(`New Heikin Ashi Candle Data (${new Date().toUTCString()}):`, { direction, valid, prevHa: prev, min15: candle, newHa: haCandle })
-
     console.log(`${direction}: ${valid}`)
-    return { valid, prev: haCandle, direction }
+
+    return {valid, prev: haCandle, direction}
 }
 
 
@@ -44,17 +44,22 @@ const decideDirection = (open: number, close: number): Direction => {
 }
 
 const composeHACandle = ({ open, high, low, close }: CandleData, prevHa: CandleData | undefined): CandleData => {
+
+    console.log('composeHACandle: ', prevHa, { open, high, low, close })
+
     const haClose = (open + high + low + close) / 4;
-    const haOpen = !prevHa ? open : (prevHa.open + prevHa.close) / 2;
+    const haOpen = !prevHa ? (open + close) / 2 : (prevHa.open + prevHa.close) / 2;
     const haHigh = Math.max(high, haOpen, haClose);
     const haLow = Math.min(low, haOpen, haClose);
 
-    return {
+    const res = {
         open: haOpen,
         high: haHigh,
         low: haLow,
         close: haClose,
     };
+
+    return res;
 };
 
 export const mergeCandleData = (data: CandleData[]): CandleData => {
@@ -117,7 +122,7 @@ const checkValidBearish = (candle: CandleData, midPrice: number, bound: number) 
         return false;
     }
 
-    const avgBody = Math.abs(candle.open - candle.close) / 2;
+    const avgBody = Math.abs(candle.open + candle.close) / 2;
     const res = avgBody < bound ? true : false;
 
     if(res) console.log(`hammer like candle found`)

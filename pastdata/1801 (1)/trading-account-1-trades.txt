@@ -1,0 +1,52 @@
+🔴: Account ID-1 - Entered BEARISH - Current Balance: 50000: 
+50000
+🟠 A Trade on account 1 has ended - SL HIT: 
+ BALANCE: 48500
+🟢: Account ID-1 - Entered BULLISH - Current Balance: 48500: 
+48500
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-1
+🟠 A Trade on account 1 has ended - TP HIT: 
+ BALANCE: 52865
+🟢: Account ID-1 - Entered BULLISH - Current Balance: 52865: 
+52865
+🟠 A Trade on account 1 has ended - SL HIT: 
+ BALANCE: 51279.05
+🟢: Account ID-1 - Entered BULLISH - Current Balance: 51279.05: 
+51279.05
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-1
+🟠 A Trade on account 1 has ended - SL HIT: 
+ BALANCE: 51279.05
+🟢: Account ID-1 - Entered BULLISH - Current Balance: 51279.05: 
+51279.05
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-1
+🟠 A Trade on account 1 has ended - SL HIT: 
+ BALANCE: 51279.05
+🟢: Account ID-1 - Entered BULLISH - Current Balance: 51279.05: 
+51279.05
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-1
+🟠 A Trade on account 1 has ended - TP HIT: 
+ BALANCE: 55894.1645
+🟢: Account ID-1 - Entered BULLISH - Current Balance: 55894.1645: 
+55894.1645
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-1
+🟠 A Trade on account 1 has ended - SL HIT: 
+ BALANCE: 55894.1645
+🟢: Account ID-1 - Entered BULLISH - Current Balance: 55894.1645: 
+55894.1645
+🟠 A Trade on account 1 has ended - SL HIT: 
+ BALANCE: 54217.339565
+🔴: Account ID-1 - Entered BEARISH - Current Balance: 54217.339565: 
+54217.339565
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-1
+🟠 A Trade on account 1 has ended - TP HIT: 
+ BALANCE: 59096.90012585
+🔴: Account ID-1 - Entered BEARISH - Current Balance: 59096.90012585: 
+59096.90012585
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-1
+🟠 A Trade on account 1 has ended - SL HIT: 
+ BALANCE: 59096.90012585
+🔴: Account ID-1 - Entered BEARISH - Current Balance: 59096.90012585: 
+59096.90012585
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-1
+🟠 A Trade on account 1 has ended - SL HIT: 
+ BALANCE: 59096.90012585

@@ -1,0 +1,60 @@
+🔴: Account ID-3 - Entered BEARISH - Current Balance: 50000: 
+50000
+🟠 A Trade on account 3 has ended - SL HIT: 
+ BALANCE: 48500
+🟢: Account ID-3 - Entered BULLISH - Current Balance: 48500: 
+48500
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 49955
+🟢: Account ID-3 - Entered BULLISH - Current Balance: 49955: 
+49955
+🟠 A Trade on account 3 has ended - SL HIT: 
+ BALANCE: 48456.35
+🟢: Account ID-3 - Entered BULLISH - Current Balance: 48456.35: 
+48456.35
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 49910.040499999996
+🟢: Account ID-3 - Entered BULLISH - Current Balance: 49910.040499999996: 
+49910.040499999996
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 51407.341714999995
+🟢: Account ID-3 - Entered BULLISH - Current Balance: 51407.341714999995: 
+51407.341714999995
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 52949.56196645
+🟢: Account ID-3 - Entered BULLISH - Current Balance: 52949.56196645: 
+52949.56196645
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 54538.0488254435
+🟢: Account ID-3 - Entered BULLISH - Current Balance: 54538.0488254435: 
+54538.0488254435
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 56174.1902902068
+🟢: Account ID-3 - Entered BULLISH - Current Balance: 56174.1902902068: 
+56174.1902902068
+🟠 A Trade on account 3 has ended - SL HIT: 
+ BALANCE: 54488.9645815006
+🟢: Account ID-3 - Entered BULLISH - Current Balance: 54488.9645815006: 
+54488.9645815006
+🟠 A Trade on account 3 has ended - SL HIT: 
+ BALANCE: 52854.295644055586
+🔴: Account ID-3 - Entered BEARISH - Current Balance: 52854.295644055586: 
+52854.295644055586
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 54439.92451337726
+🔴: Account ID-3 - Entered BEARISH - Current Balance: 54439.92451337726: 
+54439.92451337726
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 56073.12224877857
+🔴: Account ID-3 - Entered BEARISH - Current Balance: 56073.12224877857: 
+56073.12224877857
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 57755.315916241925
+🔴: Account ID-3 - Entered BEARISH - Current Balance: 57755.315916241925: 
+57755.315916241925
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 59487.97539372918
+🔴: Account ID-3 - Entered BEARISH - Current Balance: 59487.97539372918: 
+59487.97539372918
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 61272.61465554106

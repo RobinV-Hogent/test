@@ -1,0 +1,39 @@
+🟢: Account ID-7 - Entered BULLISH - Current Balance: 50000: 
+50000
+🟠 A Trade on account 7 has ended - SL HIT: 
+ BALANCE: 48500
+🟢: Account ID-7 - Entered BULLISH - Current Balance: 48500: 
+48500
+🟠 A Trade on account 7 has ended - SL HIT: 
+ BALANCE: 47045
+🔴: Account ID-7 - Entered BEARISH - Current Balance: 47045: 
+47045
+🟠 A Trade on account 7 has ended - SL HIT: 
+ BALANCE: 45633.65
+🔴: Account ID-7 - Entered BEARISH - Current Balance: 45633.65: 
+45633.65
+🟠 A Trade on account 7 has ended - SL HIT: 
+ BALANCE: 45633.65
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-7
+🟢: Account ID-7 - Entered BULLISH - Current Balance: 45633.65: 
+45633.65
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-7
+🟠 A Trade on account 7 has ended - TP HIT: 
+ BALANCE: 49740.6785
+🟢: Account ID-7 - Entered BULLISH - Current Balance: 49740.6785: 
+49740.6785
+🟠 - SL MOVED TO BREAKEVEN - ACCOUNT-7
+🟠 A Trade on account 7 has ended - TP HIT: 
+ BALANCE: 54217.339565
+🟢: Account ID-7 - Entered BULLISH - Current Balance: 54217.339565: 
+54217.339565
+🟠 A Trade on account 7 has ended - SL HIT: 
+ BALANCE: 52590.81937805
+🟢: Account ID-7 - Entered BULLISH - Current Balance: 52590.81937805: 
+52590.81937805
+🟠 A Trade on account 7 has ended - SL HIT: 
+ BALANCE: 51013.0947967085
+🟢: Account ID-7 - Entered BULLISH - Current Balance: 51013.0947967085: 
+51013.0947967085
+🟠 A Trade on account 7 has ended - SL HIT: 
+ BALANCE: 49482.70195280725

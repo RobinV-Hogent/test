@@ -1,25 +1,21 @@
 import { checkTrades, createTradingAccounts, performTrades } from './trading.ts';
-import { checkHAValidity, generateId, isValidHeikinAshi, validatePreviousCandle } from './utilities.ts';
+import { checkHAValidity, generateId, isOneSidedHA, isValidHeikinAshi, validatePreviousCandle } from './utilities.ts';
+import { connect } from './websocket.ts';
 
+import * as readline from 'readline';
 
-const ws = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@kline_1m");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+connect();
 
 const data = {}
-let quarterData: CandleData[] = [];
-let isValidHeikinAshiCandle: boolean = false; // initialize with right bool (def: false)
-
-// previousHaCandle = Default = undefined
+let isValidHeikinAshiCandle: boolean = false;
 let previousHaCandle: CandleData | undefined = undefined;
-// let previousHaCandle: undefined | CandleData = {
-//     open: 94179.5,
-//     high: 94316.7,
-//     low: 94179.5,
-//     close: 94263.9
-// };
-
-const CHECK_EVERY_X_MIN = 5;
-
-let haDirection: Direction | undefined = undefined; // initialize with right num (def: undefined)
+const CHECK_EVERY_X_MIN = 15;
+let haDirection: Direction | undefined = undefined;
 
 let first = true;
 let heikinFirst = true;
@@ -29,42 +25,32 @@ let lastId = generateId(t);
 createTradingAccounts();
 
 const initializeHeikinAshi = async () => {
-    // get heikinashi candles
-    const data = await fetch(`https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=${CHECK_EVERY_X_MIN}m&limit=10`).then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+    // INPUT MANUALLY
+    setTimeout(async () => {
+        previousHaCandle = {
+            open: parseFloat(await read('O: ') as string),
+            high: parseFloat(await read('H: ') as string),
+            low: parseFloat(await read('L: ') as string),
+            close: parseFloat(await read('C: ') as string),
         }
-        return response.json();
-    })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+        rl.close();
 
-    // -1 cuz last item is current candle
-    for (let i = 0; i < data.length - 2; i++) {
-
-        const [_, c_open, c_high, c_low, c_close] = data[i]
-
-        const minute15candle = {
-            open: parseFloat(c_open),
-            close: parseFloat(c_close),
-            high: parseFloat(c_high),
-            low: parseFloat(c_low)
-        }
-
-        const res = checkHAValidity(minute15candle, previousHaCandle)
-
+        const res = isOneSidedHA(previousHaCandle)
         isValidHeikinAshiCandle = res.valid;
         previousHaCandle = res.prev;
         haDirection = res.direction;
-    }
-
-    const [__, n_open, n_high, n_low, n_close] = data[data.length - 1]
+    }, 5000);
 }
 
+const read = (question: string) => {
+    return new Promise((resolve) => {
+        rl.question(question, (answer) => {
+            resolve(answer);
+        });
+    });
+}
 
-const messageReceived = async (event) => {
-
+export const messageReceived = async (event) => {
     const message = JSON.parse(event.data);
     const kline = message.k;
     const time = new Date(kline.t);
@@ -100,55 +86,43 @@ const checkHammerLikeCandle = (id: string): boolean => {
 }
 
 const checkHA = async (time: Date, checkEveryXminutes: number) => {
-    if (time.getMinutes() % checkEveryXminutes == 0 && heikinFirst) {
-        console.log('New Heikin Ashi Candle')
+    setTimeout(async () => {
+        if (time.getMinutes() % checkEveryXminutes == 0 && heikinFirst) {
+            console.log('New Heikin Ashi Candle')
 
-        await fetch(`https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=${checkEveryXminutes}m&limit=2`).then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+            await fetch(`https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=${checkEveryXminutes}m&limit=2`).then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            }).then(resp => {
+                // 0 = the candle before the current one that has opened
+                const [__, n_open, n_high, n_low, n_close] = resp[0];
+
+                const candle: CandleData = {
+                    open: parseFloat(n_open),
+                    close: parseFloat(n_close),
+                    high: parseFloat(n_high),
+                    low: parseFloat(n_low)
+                }
+
+                const res = checkHAValidity(candle, previousHaCandle);
+                console.log(previousHaCandle, candle, res.prev)
+                isValidHeikinAshiCandle = res.valid;
+                previousHaCandle = res.prev;
+                haDirection = res.direction;
+                heikinFirst = false;
             }
-            return response.json();
-        }).then(resp => {
-            const [__, n_open, n_high, n_low, n_close] = resp[0];
-
-            const candle: CandleData = {
-                open: parseFloat(n_open),
-                close: parseFloat(n_close),
-                high: parseFloat(n_high),
-                low: parseFloat(n_low)
-            }
-
-
-            const res = checkHAValidity(candle, previousHaCandle);
-            isValidHeikinAshiCandle = res.valid;
-            previousHaCandle = res.prev;
-            haDirection = res.direction;
-            heikinFirst = false;
+            )
+                .catch(error => {
+                    console.error('Error:', error);
+                });
         }
-        )
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    }
 
-    if (!(time.getMinutes() % checkEveryXminutes == 0)) {
-        heikinFirst = true;
-    }
+        if (!(time.getMinutes() % checkEveryXminutes == 0)) {
+            heikinFirst = true;
+        }
+    }, 3000);
 }
 
 initializeHeikinAshi();
-
-
-// Listen for WebSocket messages
-ws.onmessage = (event) => messageReceived(event)
-
-
-// Handle WebSocket errors
-ws.onerror = function (error) {
-    console.error("WebSocket Error:", error);
-};
-
-// Handle WebSocket close event
-ws.onclose = function () {
-    console.log("WebSocket connection closed");
-};

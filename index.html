@@ -11,46 +11,6 @@
     <h1>Live BTC/USDT Candlestick Chart (Without Plugin)</h1>
 
     <div id="items"></div>
-
-    <script>
-        // WebSocket connection to Binance for 1-minute candlestick data
-        const ws = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@kline_1m");
-
-        const items = document.querySelector('#items')
-        // Listen for WebSocket messages
-        ws.onmessage = function (event) {
-            const message = JSON.parse(event.data);
-            const kline = message.k;
-
-            // Parse candlestick data from the WebSocket message
-            const time = new Date(kline.t); // Convert timestamp to Date
-            const open = parseFloat(kline.o);
-            const high = parseFloat(kline.h);
-            const low = parseFloat(kline.l);
-            const close = parseFloat(kline.c);
-
-            const item = {
-                open,
-                high,
-                low,
-                close
-            }
-
-            console.log(item);
-
-            items.innerHTML += JSON.stringify(item) + "<br />"
-        };
-
-        // Handle WebSocket errors
-        ws.onerror = function (error) {
-            console.error("WebSocket Error:", error);
-        };
-
-        // Handle WebSocket close event
-        ws.onclose = function () {
-            console.log("WebSocket connection closed");
-        };
-    </script>
 </body>
 
 </html>

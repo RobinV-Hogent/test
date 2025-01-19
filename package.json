@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "dev": "node index.ts",
-    "test": "node tests.ts"
+    "test": "node tests.ts",
+    "dev": "node index.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +14,14 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
     "babel-jest": "^29.7.0",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
   }
 }

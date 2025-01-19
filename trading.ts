@@ -1,4 +1,4 @@
-import { printTradeExecutions } from "./logger.ts";
+import { printCSV, printTradeExecutions } from "./logger.ts";
 import { setup1, setup2, setup3, setup4, setup5, setup6, setup7 } from "./trading-setup.ts";
 
 const baseAccount: TradingAccount = {
@@ -10,6 +10,8 @@ const baseAccount: TradingAccount = {
 const accounts: TradingAccount[] = [];
 
 export const createTradingAccounts = () => {
+
+    if(accounts.length > 0) return;
 
     console.log('Creating Trading Accounts')
 
@@ -139,13 +141,13 @@ export const checkOutOfTrade = (data: CandleData, trade: Trade, account: Trading
             outOfTrade = true;
         }
         if (data.low <= trade.stoploss) {
-            account.balance -= Math.abs(trade.stoploss - trade.entry)
+            account.balance -= (trade.entry == trade.stoploss) ? 0 : trade.risk;
             endTrade(account, 'SL')
             outOfTrade = true;
         }
     } else {
         if (data.high >= trade.stoploss) {
-            account.balance -= Math.abs(trade.stoploss - trade.entry)
+            account.balance -= (trade.entry == trade.stoploss) ? 0 : trade.risk;
             endTrade(account, 'SL')
             outOfTrade = true;
         }
@@ -166,4 +168,6 @@ export const endTrade = (account: TradingAccount, reason: 'TP' | 'SL') => {
     const msg = `🟠 A Trade on account ${account.id} has ended`;
     console.log(msg)
     printTradeExecutions(`${msg} - ${reason} HIT: \n BALANCE: ${account.balance}`, account)
+
+    printCSV({t: account, type: reason});
 }

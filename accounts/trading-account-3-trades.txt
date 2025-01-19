@@ -1,2 +1,4 @@
 🟢: Account ID-3 - Entered BULLISH - Current Balance: 50000: 
 50000
+🟠 A Trade on account 3 has ended - TP HIT: 
+ BALANCE: 51500
